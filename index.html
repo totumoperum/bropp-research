@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BROPP — Evidence-first archival research</title>
+<meta name="description" content="BROPP is an evidence-first archival research prototype combining source provenance, historical identity matching and carefully bounded live-web investigation.">
+<meta name="theme-color" content="#1c4037">
+<style>
+:root{--paper:#f8f6ef;--ink:#24352e;--green:#315b4b;--light:#e5eee6;--line:#cdd6cb}*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.58 system-ui,Segoe UI,Arial,sans-serif}a{color:inherit}
+.wrap{max-width:1120px;margin:auto;padding:0 30px}header{border-bottom:1px solid var(--line);background:#f8f6ef}
+header .wrap{padding-top:18px;padding-bottom:18px;display:flex;justify-content:space-between;align-items:center;gap:20px}.brand{font:700 26px Georgia,serif;text-decoration:none;letter-spacing:.08em}.brand i{font:600 12px system-ui;color:var(--green);letter-spacing:.1em}
+nav{display:flex;gap:25px;font-size:13px;font-weight:600}nav a{text-decoration:none}
+.kicker{letter-spacing:.15em;text-transform:uppercase;color:var(--green);font-size:12px;font-weight:750}
+.hero{padding:84px 0;border-bottom:1px solid var(--line)}.duo{display:grid;grid-template-columns:1.12fr .88fr;gap:65px;align-items:center}
+h1,h2,h3{font-family:Georgia,'Times New Roman',serif;line-height:1.15;letter-spacing:-.03em;font-weight:400}h1{font-size:clamp(48px,6.6vw,80px);margin:18px 0 22px}h1 em{color:var(--green)}h2{font-size:clamp(36px,4vw,52px);margin:9px 0 19px}
+.lead{font-size:20px;color:#4b6157;max-width:630px}.muted{color:#56695f}.status{border:1px solid #b4c8b9;background:var(--light);display:inline-block;padding:9px 14px;font-size:12px;font-weight:650;margin-top:20px}
+.paper{background:#e7ede4;border:1px solid #b6c7b9;padding:25px;box-shadow:11px 11px 0 #d6e0d6}
+.paperhead{font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:#577164;border-bottom:1px solid #bacbbc;padding-bottom:12px}
+.node{background:#fafbf6;border:1px solid #c1cfc4;padding:15px 17px;display:grid;grid-template-columns:32px 1fr;gap:10px;margin-top:13px}.node b{font-size:13px}.node small{color:#63776b;font-size:12px;display:block}.n{font:25px Georgia,serif;color:#43705d}
+section{padding:68px 0;border-bottom:1px solid var(--line)}.intro{max-width:780px;color:#50665b}
+.columns{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:34px}
+.feature{background:#fffefa;border:1px solid var(--line);padding:24px}.feature .roman{color:var(--green);font:24px Georgia,serif}.feature h3{font-size:24px;margin:16px 0 9px}.feature p{color:#52675e;font-size:14px;margin:0}
+.dark{background:#203b33;color:#f1f6ee}.dark .kicker{color:#add0b7}.dark .intro{color:#bcd0c2}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:35px}.step{border-top:1px solid #688d78;padding-top:15px}.step b{color:#add0b7;font:30px Georgia,serif}.step h3{font:700 14px system-ui;margin:18px 0 8px}.step p{font-size:13px;color:#bcd0c2;margin:0}
+.case{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:30px;border:1px solid var(--line);padding:26px;background:#fffefa}.case ul{padding-left:20px;color:#52675e;font-size:14px}.caution{background:#e9efe7;border-left:3px solid var(--green);padding:20px;font-size:14px}
+footer{padding:30px 0;color:#64746b;font-size:12px}
+@media(max-width:850px){.duo,.case{grid-template-columns:1fr}.paper{max-width:590px}.columns{grid-template-columns:1fr}.steps{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.wrap{padding:0 17px}nav{gap:9px;flex-wrap:wrap}section{padding:48px 0}.hero{padding:45px 0}.steps{grid-template-columns:1fr}.lead{font-size:17px}}
+</style></head>
+<body><header><div class="wrap"><a class="brand" href="#top">BROPP <i>/ RESEARCH</i></a><nav><a href="#approach">Approach</a><a href="#architecture">Technology</a><a href="#example">Prototype</a></nav></div></header>
+<main id="top">
+<div class="hero"><div class="wrap duo"><div><p class="kicker">Evidence-first archival research</p>
+<h1>Find the record.<br><em>Prove the connection.</em></h1>
+<p class="lead">Research infrastructure for fragmented public archives: historical identities, probate notices, civil registries, newspapers and the documentary links between them.</p>
+<p>BROPP is an independent, <strong>pre-production research software prototype</strong> developed in Ireland. Its first application is archival genealogy and estate research.</p>
+<span class="status">● &nbsp; Working prototype · Private evaluation</span></div>
+<div class="paper" role="img" aria-label="A four-stage research workflow showing official seeds, source discovery, evidence comparison and next proof">
+<div class="paperhead">Archival workflow · 01–04</div>
+<div class="node"><span class="n">01</span><div><b>Historical record</b><small>Official reference, person, date or name variant</small></div></div>
+<div class="node"><span class="n">02</span><div><b>Targeted web discovery</b><small>Public registers, archives, historical newspapers</small></div></div>
+<div class="node"><span class="n">03</span><div><b>Evidence and contradictions</b><small>Source provenance, uncertain identity, failed searches</small></div></div>
+<div class="node"><span class="n">04</span><div><b>Next documentary proof</b><small>Exact record to inspect; human review required</small></div></div>
+</div></div></div>
+<section id="approach"><div class="wrap"><p class="kicker">The problem</p><h2>The web has records.<br>Research needs continuity.</h2>
+<p class="intro">A name found on six websites is not the same as an independently proved family relationship. BROPP keeps past investigations useful, separates original documents from syndicated copies and proposes the next source capable of resolving a specific uncertain identity.</p>
+<div class="columns"><article class="feature"><span class="roman">I.</span><h3>Original sources first</h3><p>Work from official records, archived publications and carefully cited sources rather than confident but unsupported AI assertions.</p></article>
+<article class="feature"><span class="roman">II.</span><h3>Identity before pedigree</h3><p>Preserve namesakes, variant dates and conflicting evidence until an original record supports the connection.</p></article>
+<article class="feature"><span class="roman">III.</span><h3>Research that accumulates</h3><p>Source identifiers, negative searches and case-specific next proofs prevent repeated unproductive browsing.</p></article></div></div></section>
+<section id="architecture" class="dark"><div class="wrap"><p class="kicker">Research technology</p><h2>Structured records meet the live web.</h2>
+<p class="intro">The prototype combines a multi-jurisdictional source registry, evidence-linked case data, research queues and a local browser console. TinyFish is being evaluated as a permitted Search, Fetch and bounded browser-access component—not an automatic authority on genealogy.</p>
+<div class="steps"><div class="step"><b>01</b><h3>Ingest public records</h3><p>Official historical references, source identifiers and name variants.</p></div>
+<div class="step"><b>02</b><h3>Find exact evidence</h3><p>Narrow archival search and authorised retrieval; avoid expensive blind browsing.</p></div>
+<div class="step"><b>03</b><h3>Build a provenance graph</h3><p>Evidence-backed facts, rival hypotheses and contradictions remain distinct.</p></div>
+<div class="step"><b>04</b><h3>Review before promotion</h3><p>Human checks of primary documents before accepting kinship or entitlement.</p></div></div></div></section>
+<section id="example"><div class="wrap"><p class="kicker">Illustrative prototype scenario</p><h2>One question, not a thousand guesses.</h2>
+<p class="intro">This fictional example illustrates the workflow without exposing real people's records or identities.</p>
+<div class="case"><div><strong>An uncertain historical parentage</strong><ul><li>A newspaper index mentions a family surname and birth year.</li><li>A separate marriage index supplies a plausible parent, but the maiden name differs.</li><li>BROPP tracks both readings and the source lineages.</li><li>The next test is an exact original birth or marriage register.</li></ul></div>
+<div class="caution"><strong>Review outcome: not yet proved.</strong><p>The system identifies an archival record that could decide the question. No identity or parent-child relationship is promoted from a secondary hint, and no living person is contacted automatically.</p></div></div></div></section>
+<section><div class="wrap"><p class="kicker">Integrity and privacy</p><h2>Careful by design.</h2><p class="intro">The research engine is being evaluated on permitted public and historical sources. Original documents, lawful access and human adjudication remain essential. This website contains no private case records, claimant identities, login sessions or account details.</p><p class="muted">Status: independent prototype, pre-production, not a legal determination service.</p></div></section>
+</main><footer><div class="wrap">BROPP · Evidence-first historical research · Ireland · © 2026</div></footer>
+</body></html>
